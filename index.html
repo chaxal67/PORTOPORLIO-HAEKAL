@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhamad Haekal | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Background Elements -->
+    <div class="background-blob">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo" onclick="window.location.href='index.html'">MHB</div>
+        <div class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html" class="nav-link active">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="skills.html" class="nav-link">Skills</a></li>
+            <li><a href="experience.html" class="nav-link">Experience</a></li>
+            <li><a href="projects.html" class="nav-link">Projects</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <li class="theme-toggle" onclick="toggleTheme()"><i class="fas fa-moon"></i></li>
+        </ul>
+    </nav>
+
+    <main id="home-section" class="page-section">
+        <div class="container">
+            <div class="hero-layout">
+                <div class="hero-content">
+                    <span class="hero-role">Digital Creative Developer</span>
+                    <h1>Halo, saya <br><span class="gradient-text">Muhamad Haekal</span></h1>
+                    <p class="hero-tagline">Web • UI/UX • AI Content • Video • Social Media</p>
+                    <div class="hero-buttons">
+                        <a href="projects.html" class="btn btn-primary">View Projects <i class="fas fa-arrow-right"></i></a>
+                        <a href="contact.html" class="btn btn-outline">Contact Me</a>
+                    </div>
+                    <div class="home-skills-preview">
+                        <div class="skill-mini-card"><i class="fas fa-code"></i> Web Dev</div>
+                        <div class="skill-mini-card"><i class="fas fa-paint-brush"></i> UI/UX Design</div>
+                        <div class="skill-mini-card"><i class="fas fa-robot"></i> AI Content</div>
+                    </div>
+                </div>
+                <div class="hero-image-container">
+                    <div class="hero-image-bg"></div>
+                    <!-- GANTI URL DI BAWAH INI DENGAN FOTO ANDA -->
+                    <img src="asset/1.png" alt="Muhamad Haekal" class="hero-img">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.instagram.com/mhaekalb_?igsh=ZXJnZndxNzdnM2Zj" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/muhamad-haekal-03b054394?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">&copy; 2026 Muhamad Haekal. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <div id="toast" class="toast"><i class="fas fa-check-circle"></i><span>Pesan berhasil dikirim!</span></div>
+    <script src="script.js"></script>
+</body>
+</html>

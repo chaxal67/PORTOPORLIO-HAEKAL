@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhamad Haekal | Experience</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-blob"><div class="blob blob-1"></div><div class="blob blob-2"></div></div>
+    <nav class="navbar">
+        <div class="logo" onclick="window.location.href='index.html'">MHB</div>
+        <div class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="skills.html" class="nav-link">Skills</a></li>
+            <li><a href="experience.html" class="nav-link active">Experience</a></li>
+            <li><a href="projects.html" class="nav-link">Projects</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <li class="theme-toggle" onclick="toggleTheme()"><i class="fas fa-moon"></i></li>
+        </ul>
+    </nav>
+    <main class="page-section">
+        <div class="container">
+            <h2 class="section-title">Pengalaman & Kontribusi</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-date">2025 – 2026</div>
+                        <h3>STAF MEDIA KOMUNIKASI DAN INFORMASI HMSI UKRI</h3>
+                        <p style="color: var(--primary); font-weight: 500;">Organizational Media Team</p>
+                        <ul>
+                            <li>Social media management untuk berbagai platform digital.</li>
+                            <li>Perencanaan konten dan pengelolaan content calendar.</li>
+                            <li>Produksi video berbasis AI untuk kampanye digital.</li>
+                            <li>Pembuatan konten visual AI yang menarik perhatian audiens.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot" style="background: var(--text-muted);"></div>
+                    <div class="timeline-content glass-card" style="opacity: 0.7;">
+                        <div class="timeline-date">2026 – sekarang</div>
+                        <h3>Magang Web Developer</h3>
+                        <p style="color: var(--text-muted);">Self-Employed</p>
+                        <ul>
+                            <li>Mengembangkan website berbasis React.js</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer><div class="container"><p style="color: var(--text-muted); font-size: 0.9rem;">&copy; 2026 Muhamad Haekal.</p></div></footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhamad Haekal | Project Detail</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-blob"><div class="blob blob-1"></div><div class="blob blob-2"></div></div>
+    <nav class="navbar">
+        <div class="logo" onclick="window.location.href='index.html'">MHB</div>
+        <div class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="skills.html" class="nav-link">Skills</a></li>
+            <li><a href="experience.html" class="nav-link">Experience</a></li>
+            <li><a href="projects.html" class="nav-link">Projects</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <li class="theme-toggle" onclick="toggleTheme()"><i class="fas fa-moon"></i></li>
+        </ul>
+    </nav>
+    <main class="page-section">
+        <div class="container">
+            <a href="projects.html" class="btn btn-outline" style="margin-bottom: 30px;"><i class="fas fa-arrow-left"></i> Kembali ke Projects</a>
+            <!-- Konten detail proyek akan muncul di sini oleh JavaScript -->
+            <div id="detailContent"></div>
+        </div>
+    </main>
+    <footer><div class="container"><p style="color: var(--text-muted); font-size: 0.9rem;">&copy; 2026 Muhamad Haekal.</p></div></footer>
+    <script src="script.js"></script>
+</body>
+</html>

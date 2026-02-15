@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhamad Haekal | Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-blob"><div class="blob blob-1"></div><div class="blob blob-2"></div></div>
+    <nav class="navbar">
+        <div class="logo" onclick="window.location.href='index.html'">MHB</div>
+        <div class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="skills.html" class="nav-link">Skills</a></li>
+            <li><a href="experience.html" class="nav-link">Experience</a></li>
+            <li><a href="projects.html" class="nav-link active">Projects</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <li class="theme-toggle" onclick="toggleTheme()"><i class="fas fa-moon"></i></li>
+        </ul>
+    </nav>
+    <main class="page-section">
+        <div class="container">
+            <h2 class="section-title">Proyek Yang di kerjakan</h2>
+            <div class="projects-grid">
+                <!-- Klik kartu proyek akan membuka halaman detail dengan parameter ID -->
+                <div class="project-card glass-card" onclick="window.location.href='project-detail.html?id=ai-campaign'">
+                    <img src="https://picsum.photos/seed/ai/400/300" alt="Project 1" class="project-thumb">
+                    <div class="project-info">
+                        <span class="project-cat">AI Content</span>
+                        <h3 class="project-title">AI Creative Campaign System</h3>
+                        <p class="project-desc">Produksi konten visual dan video berbasis AI untuk branding digital, promosi, dan storytelling kreatif berbasis teknologi generatif.</p>
+                        <div class="tech-stack">
+                        <span class="tech-badge">AI Video</span>
+                        <span class="tech-badge">AI Image</span>
+                        <span class="tech-badge">Digital Branding</span>
+                        <span class="tech-badge">Generative Content</span>
+                    </div>
+
+                        <button class="btn btn-outline" style="width: 100%; justify-content: center;">Lihat Detail</button>
+                    </div>
+                </div>
+                <div class="project-card glass-card" onclick="window.location.href='project-detail.html?id=web-portfolio'">
+                    <img src="https://picsum.photos/seed/web/400/300" alt="Project 2" class="project-thumb">
+                    <div class="project-info">
+                        <span class="project-cat">Academic Web Projects</span>
+                        <h3 class="project-title">Final Project Digital System</h3>
+                        <p class="project-desc">Platform web berbasis proyek akademik dengan pendekatan profesional, modern UI/UX, dan sistem terstruktur yang siap diimplementasikan di dunia nyata.</p>
+                        <div class="tech-stack">
+                        <span class="tech-badge">Web System</span>
+                        <span class="tech-badge">UI/UX</span>
+                        <span class="tech-badge">Frontend</span>
+                        <span class="tech-badge">Digital Platform</span>
+                    </div>
+                        <button class="btn btn-outline" style="width: 100%; justify-content: center;">Lihat Detail</button>
+                    </div>
+                </div>
+                <div class="project-card glass-card" onclick="window.location.href='project-detail.html?id=social-media'">
+                    <img src="https://picsum.photos/seed/social/400/300" alt="Project 3" class="project-thumb">
+                    <div class="project-info">
+                        <span class="project-cat">Digital Growth System</span>
+                        <h3 class="project-title">Smart Content Strategy</h3>
+                        <p class="project-desc">Manajemen media sosial, perencanaan konten strategis, produksi visual & video digital, serta optimalisasi engagement berbasis data dan tren.</p>
+                        <div class="tech-stack">
+                        <span class="tech-badge">Content Planning</span>
+                        <span class="tech-badge">Social Media</span>
+                        <span class="tech-badge">Video</span>
+                        <span class="tech-badge">AI Visual</span>
+                     </div>
+                        <button class="btn btn-outline" style="width: 100%; justify-content: center;">Lihat Detail</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer><div class="container"><p style="color: var(--text-muted); font-size: 0.9rem;">&copy; 2026 Muhamad Haekal.</p></div></footer>
+    <script src="script.js"></script>
+</body>
+</html>

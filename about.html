@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhamad Haekal | About</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-blob"><div class="blob blob-1"></div><div class="blob blob-2"></div></div>
+
+    <nav class="navbar">
+        <div class="logo" onclick="window.location.href='index.html'">MHB</div>
+        <div class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link active">About</a></li>
+            <li><a href="skills.html" class="nav-link">Skills</a></li>
+            <li><a href="experience.html" class="nav-link">Experience</a></li>
+            <li><a href="projects.html" class="nav-link">Projects</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <li class="theme-toggle" onclick="toggleTheme()"><i class="fas fa-moon"></i></li>
+        </ul>
+    </nav>
+
+    <main class="page-section">
+        <div class="container">
+            <h2 class="section-title">Tentang Saya</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p style="margin-bottom: 20px; font-size: 1.1rem;">Saya adalah <strong>Creative Technologist</strong> yang menggabungkan kemampuan teknis dalam pengembangan web dengan sensibilitas desain modern. Misi saya adalah menjembatani kesenjangan antara kode yang fungsional dan visual yang memukau.</p>
+                    <p style="color: var(--text-muted); margin-bottom: 30px;">Dengan latar belakang yang kuat di digital media dan teknologi AI, saya menciptakan solusi digital yang tidak hanya bekerja dengan baik tetapi juga memberikan pengalaman estetis bagi pengguna.</p>
+                    <div class="about-stats">
+                        <div class="stat-item"><h3>3+</h3><p>Tahun Pengalaman</p></div>
+                        <div class="stat-item"><h3>20+</h3><p>Proyek Selesai</p></div>
+                        <div class="stat-item"><h3>100%</h3><p>Kreativitas</p></div>
+                    </div>
+                </div>
+                <div class="about-img-wrapper">
+                    <!-- GANTI URL DI BAWAH INI DENGAN FOTO ANDA -->
+                    <img src="asset/1.png" alt="Muhamad Haekal" style="width: 100%; border-radius: var(--border-radius); object-fit: cover; height: 500px;">
+                </div>
+            </div>
+            <div style="margin-top: 80px;">
+                <h3 style="margin-bottom: 30px; text-align: center;">Fokus Utama</h3>
+                <div class="skills-grid">
+                    <div class="glass-card"><i class="fas fa-laptop-code" style="font-size: 1.5rem; color: var(--primary); margin-bottom: 15px;"></i><h4>Web Development</h4><p style="color: var(--text-muted); font-size: 0.9rem;">Membangun website responsif dan interaktif.</p></div>
+                    <div class="glass-card"><i class="fas fa-layer-group" style="font-size: 1.5rem; color: var(--secondary); margin-bottom: 15px;"></i><h4>UI/UX Design</h4><p style="color: var(--text-muted); font-size: 0.9rem;">Merancang antarmuka yang intuitif.</p></div>
+                    <div class="glass-card"><i class="fas fa-wand-magic-sparkles" style="font-size: 1.5rem; color: var(--accent); margin-bottom: 15px;"></i><h4>AI Content</h4><p style="color: var(--text-muted); font-size: 0.9rem;">Memanfaatkan AI untuk produksi konten.</p></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer><div class="container"><p style="color: var(--text-muted); font-size: 0.9rem;">&copy; 2026 Muhamad Haekal.</p></div></footer>
+    <script src="script.js"></script>
+</body>
+</html>
